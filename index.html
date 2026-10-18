@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OneTool — Free Online Calculators & Useful Tools</title>
+
+    <meta
+        name="description"
+        content="Use free online calculators, unit converters, text tools and everyday utilities. Fast, simple and easy to use with OneTool."
+    >
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#080d18">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="OneTool — Free Online Tools">
+    <meta
+        property="og:description"
+        content="Discover free online calculators, converters and productivity tools in one place."
+    >
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="OneTool — Free Online Tools">
+    <meta
+        name="twitter:description"
+        content="Simple, fast and useful online tools for everyday tasks."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a class="logo" href="#" aria-label="OneTool home">
+                <span class="logo-icon">O</span>
+                <span>One<span class="blue-text">Tool</span></span>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <a class="nav-link active" href="#home">Home</a>
+                <a class="nav-link" href="#tools">Explore Tools</a>
+                <a class="nav-link" href="#categories">Categories</a>
+                <a class="nav-link" href="#about">About</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-button" id="themeToggle"
+                        type="button" aria-label="Switch color theme"
+                        title="Switch theme">
+                    <span id="themeIcon" aria-hidden="true">☼</span>
+                </button>
+
+                <button class="menu-toggle" id="menuToggle"
+                        type="button" aria-label="Toggle navigation"
+                        aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-glow glow-one"></div>
+            <div class="hero-glow glow-two"></div>
+
+            <div class="container hero-content">
+                <div class="announcement">
+                    <span class="status-dot"></span>
+                    YOUR EVERYDAY DIGITAL TOOLKIT
+                </div>
+
+                <h1>
+                    Everything you need.<br>
+                    <span class="gradient-text">One place.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Powerful, simple and free online tools to help you
+                    get things done faster.
+                </p>
+
+                <form class="search-box" id="searchForm" role="search">
+                    <span class="search-icon" aria-hidden="true">⌕</span>
+
+                    <input
+                        id="toolSearch"
+                        type="search"
+                        placeholder="Search  tools... e.g. percentage, word count"
+                        aria-label="Search tools"
+                        autocomplete="off"
+                    >
+
+                    <button type="submit" class="btn btn-primary search-button">
+                        Search <span aria-hidden="true">→</span>
+                    </button>
+                </form>
+
+                <div class="search-hint">
+                    <span>Popular:</span>
+                    <button type="button" class="suggestion" data-search="percentage">
+                        Percentage
+                    </button>
+                    <button type="button" class="suggestion" data-search="word counter">
+                        Word Counter
+                    </button>
+                    <button type="button" class="suggestion" data-search="age">
+                        Age Calculator
+                    </button>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>Free</strong>
+                        <span>Useful tools</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div>
+                        <strong>Fast</strong>
+                        <span>Easy to use</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div>
+                        <strong>Simple</strong>
+                        <span>No clutter</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tools-section section-padding" id="tools">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">THE TOOLBOX</span>
+                        <h2>Find the right tool</h2>
+                        <p>Everyday solutions, just a click away.</p>
+                    </div>
+                    <span class="results-count" id="resultsCount">12 tools</span>
+                </div>
+
+                <div class="category-bar" id="categories">
+                    <button class="category-button active" data-category="all"
+                            type="button">All Tools</button>
+                    <button class="category-button" data-category="calculators"
+                            type="button">Calculators</button>
+                    <button class="category-button" data-category="converters"
+                            type="button">Converters</button>
+                    <button class="category-button" data-category="text"
+                            type="button">Text Tools</button>
+                    <button class="category-button" data-category="date"
+                            type="button">Date &amp; Time</button>
+                    <button class="category-button" data-category="security"
+                            type="button">Security</button>
+                </div>
+
+                <div class="tool-grid" id="toolGrid">
+
+                    <article class="tool-card" data-category="calculators"
+                             data-search="percentage percent calculator maths math">
+                        <div class="card-top">
+                            <div class="tool-icon icon-blue">%</div>
+                            <span class="card-tag">POPULAR</span>
+                        </div>
+                        <h3>Percentage Calculator</h3>
+                        <p>Calculate percentages, increases and decreases with ease.</p>
+                        <button class="tool-link" data-tool="percentage"
+                                type="button">Open Tool <span>↗</span></button>
+                    </article>
+
+                    <article class="tool-card" data-category="calculators"
+                             data-search="age birthday date of birth calculator">
+                        <div class="card-top">
+                            <div class="tool-icon icon-purple">⌁</div>
+                        </div>
+                        <h3>Age Calculator</h3>
+                        <p>Find your age in years, months and days.</p>
+                        <button class="tool-link" data-tool="age"
+                                type="button">Open Tool <span>↗</span></button>
+                    </article>
+
+                    <article class="tool-card" data-category="text"
+                             data-search="word counter character count text letters">
+                        <div class="card-top">
+                            <div class="tool-icon icon-green">Aa</div>
+                            <span class="card-tag">POPULAR</span>
+                        </div>
+                        <h3>Word Counter</h3>
+                        <p>Count words, characters and lines in your text.</p>
+                        <button class="tool-link" data-tool="word-counter"
+                                type="button">Open Tool <span>↗</span></button>
+                    </article>
+
+                    <article class="tool-card" data-category="converters"
+                             data-search="unit converter length weight distance metric">
+                        <div class="card-top">
+                            <div class="tool-icon icon-orange">⇄</div>
+                        </div>
+                        <h3>Unit Converter</h3>
+                        <p>Convert common length, weight and distance units.</p>
+                        <button class="tool-link" data-tool="unit-converter"
+                                type="button">Open Tool <span>↗</span></button>
+                    </article>
+
+                    <article class="tool-card" data-category="calculators"
+                             data-search="discount sale price savings calculator">
+                        <div class="card-top">
+                            <div class="tool-icon icon-pink">%</div>
+                        </div>
+                        <h3>Discount Calculator</h3>
+                        <p>Calculate sale prices and how much you save.</p>
+                        <button class="tool-link" data-tool="discount"
+                                type="button">Open Tool <span>↗</span></button>
+                    </article>
+
+                    <article class="tool-card" data-category="converters"
+                             data-search="temperature celsius fahrenheit kelvin converter">
+                        <div class="card-top">
+                            <div class="tool-icon icon-cyan">°C</div>
+                        </div>
+                        <h3>Temperature Converter</h3>
+                        <p>Convert Celsius, Fahrenheit and Kelvin.</p>
+                        <button class="tool-link" data-tool="temperature"
+                                type="button">Open Tool <span>↗</span></button>
+                    </article>
+
+                    <article class="tool-card" data-category="text"
+                             data-search="case converter uppercase lowercase sentence text">
+                        <div class="card-top">
+                            <div class="tool-icon icon-purple">Aa</div>
+                        </div>
+                        <h3>Case Converter</h3>
+                        <p>Change text to uppercase, lowercase or title case.</p>
+                        <button class="tool-link" data-tool="case-converter"
+                                type="button">Open Tool <span>↗</span></button>
+                    </article>
+
+                    <article class="tool-card" data-category="text"
+                             data-search="duplicate lines remove repeated text cleaner">
+                        <div class="card-top">
+                            <div class="tool-icon icon-green">≡</div>
+                        </div>
+                        <h3>Duplicate Line Remover</h3>
+                        <p>Remove repeated lines from any text.</p>
+                        <button class="tool-link" data-tool="duplicate-lines"
+                                type="button">Open Tool <span>↗</span></button>
+                    </article>
+
+                    <article class="tool-card" data-category="date"
+                             data-search="date difference days between dates duration">
+                        <div class="card-top">
+                            <div class="tool-icon icon-orange">▦</div>
+                        </div>
+                        <h3>Date Difference</h3>
+                        <p>Calculate the days between two dates.</p>
+                        <button class="tool-link" data-tool="date-difference"
+                                type="button">Open Tool <span>↗</span></button>
+                    </article>
+
+                    <article class="tool-card" data-category="calculators"
+                             data-search="loan monthly payment interest calculator">
+                        <div class="card-top">
+                            <div class="tool-icon icon-blue">$</div>
+                        </div>
+                        <h3>Loan Calculator</h3>
+                        <p>Estimate monthly payments and total interest.</p>
+                        <button class="tool-link" data-tool="loan"
+                                type="button">Open Tool <span>↗</span></button>
+                    </article>
+
+                    <article class="tool-card" data-category="security"
+                             data-search="password generator secure random strong">
+                        <div class="card-top">
+                            <div class="tool-icon icon-pink">⌑</div>
+                        </div>
+                        <h3>Password Generator</h3>
+                        <p>Generate a random password in your browser.</p>
+                        <button class="tool-link" data-tool="password"
+                                type="button">Open Tool <span>↗</span></button>
+                    </article>
+
+                    <article class="tool-card" data-category="text"
+                             data-search="text cleaner whitespace spaces formatting">
+                        <div class="card-top">
+                            <div class="tool-icon icon-cyan">✎</div>
+                        </div>
+                        <h3>Text Cleaner</h3>
+                        <p>Clean extra spaces and tidy up your text.</p>
+                        <button class="tool-link" data-tool="text-cleaner"
+                                type="button">Open Tool <span>↗</span></button>
+                    </article>
+
+                </div>
+
+                <div class="empty-state" id="emptyState" hidden>
+                    <div class="empty-icon">⌕</div>
+                    <h3>No tools found</h3>
+                    <p>Try another keyword or choose a different category.</p>
+                    <button class="btn btn-secondary" id="resetSearch"
+                            type="button">Show all tools</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-section section-padding" id="about">
+            <div class="container feature-panel">
+                <div class="feature-orb" aria-hidden="true">
+                    <div class="orb-inner">OT</div>
+                </div>
+                <div class="feature-copy">
+                    <span class="eyebrow">MADE FOR EVERYDAY WORK</span>
+                    <h2>Less searching.<br><span class="gradient-text">More doing.</span></h2>
+                    <p>
+                        OneTool brings useful online utilities together in one
+                        convenient place. Find what you need and get back to work.
+                    </p>
+                    <a class="btn btn-primary" href="#tools">Explore the tools →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a class="logo footer-logo" href="#home">
+                <span class="logo-icon">O</span>
+                <span>One<span class="blue-text">Tool</span></span>
+            </a>
+            <p>Useful tools. Less effort.</p>
+            <span class="copyright">© <span id="currentYear"></span> OneTool</span>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+
+
+<!-- ONETOOL: TOOL WORKSPACE -->
+<div class="tool-modal" id="toolModal" hidden>
+    <div class="tool-modal-backdrop" data-close-modal></div>
+
+    <section
+        class="tool-modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="toolModalTitle"
+    >
+        <div class="tool-modal-header">
+            <div>
+                <span class="eyebrow">ONETOOL WORKSPACE</span>
+                <h2 id="toolModalTitle">Online Tool</h2>
+            </div>
+
+            <button
+                type="button"
+                class="icon-button"
+                id="closeToolModal"
+                aria-label="Close tool"
+            >×</button>
+        </div>
+
+        <p class="tool-modal-description" id="toolModalDescription"></p>
+
+        <div id="toolWorkspace"></div>
+
+        <div class="tool-modal-footer">
+            <span>Free online tool · Runs in your browser</span>
+            <button type="button" class="btn btn-secondary" id="resetTool">
+                Reset
+            </button>
+        </div>
+    </section>
+</div>
+
+</html>
