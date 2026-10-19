@@ -1,5 +1,4 @@
-
 User-agent: *
 Allow: /
 
-Sitemap: https://github.com/hikmatullahniazai/OneTools.git
+Sitemap: https://hikmatullahniazai.github.io/OneTools/sitemap.xml
